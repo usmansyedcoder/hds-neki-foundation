@@ -21,6 +21,7 @@ import ManageNews from "./pages/admin/ManageNews";
 import ManageDonations from "./pages/admin/ManageDonations";
 import ManageContacts from "./pages/admin/ManageContacts";
 import ManageVolunteers from "./pages/admin/ManageVolunteers";
+import ScrollToTop from "./components/ScrollToTop";
 
 function AdminLayout({ children }) {
   return (
@@ -34,6 +35,7 @@ export default function App() {
   return (
     <AuthProvider>
       <BrowserRouter>
+        <ScrollToTop />
         <Navbar />
         <main className="min-h-[60vh]">
           <Routes>
