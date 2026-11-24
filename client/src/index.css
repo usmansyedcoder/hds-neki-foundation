@@ -1,0 +1,27 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-blue: #1e6cb1;
+  --color-brand-green: #8bc34a;
+  --color-brand-dark: #0f172a;
+}
+
+body {
+  @apply bg-white text-slate-800;
+}
+
+.btn-primary {
+  @apply bg-brand-blue hover:bg-blue-700 text-white px-6 py-3 rounded-full font-semibold transition;
+}
+
+.btn-secondary {
+  @apply bg-brand-green hover:bg-green-600 text-white px-6 py-3 rounded-full font-semibold transition;
+}
+
+.input {
+  @apply w-full border border-slate-300 rounded-lg px-4 py-3 focus:outline-none focus:ring-2 focus:ring-brand-blue;
+}
+
+.card {
+  @apply bg-white rounded-2xl shadow-md hover:shadow-xl transition overflow-hidden;
+}
